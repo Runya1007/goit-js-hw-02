@@ -1,11 +1,10 @@
 function formatMessage(message, maxLength) {
-  let strSlice;
   if (message.length <= maxLength) {
     return message;
   } else {
-    strSlice = message.slice(0, maxLength);
+    message.slice(0, maxLength);
   }
-  return `${strSlice}...`;
+  return `${message.slice(0, maxLength)}...`;
 }
 formatMessage("Curabitur ligula sapien", 16);
 formatMessage("Curabitur ligula sapien", 23);
